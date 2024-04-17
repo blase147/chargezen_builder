@@ -1,4 +1,5 @@
 import React from "react";
+import "./login_page.scss";
 
 const LoginPage = () => {
   return (

@@ -1,69 +1,95 @@
-import React from "react";
-import "./login_page.scss";
+import React from 'react';
+import './login_page.scss';
+import logo from '../images/builder-logo.bff0faae.png';
+import google from '../images/google.jpeg';
+import github from '../images/github.jpeg';
 
-const LoginPage = () => {
+function LoginPage() {
   return (
-    <div>
-      <section>
-        <h1>Everythingdigital teamsneed to build and optimize,faster</h1>
-        <h3>YOU'RE IN GOOD COMPANY </h3>
+    <div id="login_page">
+      <section id="login_text_content">
         <div>
-          <img
-            src="https://www.datocms-assets.com/20955/1606829820-teams.png"
-            alt="teams"
-          />
-          <img
-            src="https://www.datocms-assets.com/20955/1606829820-teams.png"
-            alt="teams"
-          />
-          <img
-            src="https://www.datocms-assets.com/20955/1606829820-teams.png"
-            alt="teams"
-          />
+          <h1>Everything digital partnerneed to build and optimize, faster</h1>
+        </div>
+        <div id="partners">
+          <p>
+            YOU&apos; RE IN GOOD COMPANY
+            <span style={{ color: 'gold !important' }}>↘️</span>
+          </p>
+          <div>
+            <img
+              src="https://www.datocms-assets.com/20955/1606829820-partner.png"
+              alt="partner"
+            />
+            <img
+              src="https://www.datocms-assets.com/20955/1606829820-partner.png"
+              alt="partner"
+            />
+            <img
+              src="https://www.datocms-assets.com/20955/1606829820-partner.png"
+              alt="partner"
+            />
+          </div>
         </div>
       </section>
-      <section>
+      <section id="login_card">
         <div id="login_params">
-          <img src="https://www.datocms-assets.com/20955/1606829820-teams.png" alt="teams" />
+          <img id="logo" src={logo} alt="Logo" />
           <h2>Log In</h2>
+          <p>
+            Don&apos;t have an account yet?
+            <a href="https://wwww.example.com"> Sign up</a>
+          </p>
           <div id="google_signup">
-            <img src="https://www.datocms-assets.com/20955/1606829820-teams.png" alt="teams" />
+            <div id="img_cont">
+              <img id="google" src={google} alt="Logo" style={{ width: '30px', height: '30px' }} />
+            </div>
             <p>Continue with Google</p>
           </div>
           <div id="github_signup">
-            <img src="https://www.datocms-assets.com/20955/1606829820-teams.png" alt="teams" />
+            <div id="img_cont">
+              <img id="github" src={github} alt="Logo" style={{ width: '30px', height: '30px' }} />
+            </div>
             <p>Continue with Github</p>
           </div>
-          <p>Or, log in with your email</p>
+          <div id="email_option">
+            <div />
+            <p>Or, log in with your email</p>
+            <div />
+          </div>
         </div>
         <div id="login_form">
           <form action="/login" method="post">
-            <label htmlFor="username">Work Email</label>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Enter your username"
-              required
-            />
-            <label htmlFor="password">Password</label>
-            <input
-              type="password"
-              name="password"
-              id="password"
-              placeholder="Enter your password"
-              required
-            />
+            <label htmlFor="username">
+              Work Email
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Enter your username"
+                required
+              />
+            </label>
+            <label htmlFor="password">
+              Password
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+              />
+            </label>
             <button type="submit">Login</button>
           </form>
         </div>
+        <div id="login_error">
+          <p><a href="www.example.com">Log In with SSO</a></p>
+          <p><a href="example.com">Forgot your password?</a></p>
+        </div>
       </section>
-      <div id="login_error">
-        <p>Log In with SSO</p>
-        <p>Forgot your password?</p>
-      </div>
     </div>
   );
-};
+}
 
 export default LoginPage;

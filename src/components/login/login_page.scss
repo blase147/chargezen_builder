@@ -15,6 +15,7 @@
     font-weight: 700;
     text-align: left;
     margin-bottom: 1rem;
+    line-height: 1em;
   }
 
   #login_text_content {
@@ -25,13 +26,6 @@
     width: 40%;
     padding: 40px;
     text-align: left4;
-
-    /* Media query for smaller screens */
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 2.5rem; /* Decrease font size for smaller screens */
-      }
-    }
 
     #partners {
       display: flex;
@@ -116,17 +110,18 @@
           }
         }
 
-        & p {
+        & button {
           margin: 0;
           color: white;
           font-size: 1rem;
           font-weight: 700;
-          //   background-color: blue;
+          background-color: blue;
+          text-align: left;
         }
       }
       #github_signup {
         display: flex;
-        background-color: blue;
+        background-color: rgb(116, 116, 121);
         align-items: center;
         border-radius: 10px;
         width: 100%;
@@ -151,31 +146,25 @@
           }
         }
 
-        & p {
+        & button {
           margin: 0;
           color: white;
           font-size: 1rem;
           font-weight: 700;
-          //   background-color: blue;
+          background-color: rgb(107, 107, 112);
+          text-align: left;
         }
       }
       #email_option {
         display: flex;
-        width: 100%;
-        margin-top: 20px;
-        align-content: center;
-        justify-items: center;
-        // background-color: green;
-
-        div {
-          width: 30%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        .divider {
+          flex: 1;
           height: 1px;
           background-color: black;
-          margin: 5px;
-        }
-        & p {
-          width: 50%;
-          color: grey;
+          margin: 0 10px;
         }
       }
     }

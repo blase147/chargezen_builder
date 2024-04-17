@@ -3,13 +3,21 @@ import './login_page.scss';
 import logo from '../images/builder-logo.bff0faae.png';
 import google from '../images/google.jpeg';
 import github from '../images/github.jpeg';
+import t1 from '../images/t1.png';
+import t2 from '../images/t2.png';
 
 function LoginPage() {
   return (
     <div id="login_page">
       <section id="login_text_content">
         <div>
-          <h1>Everything digital partnerneed to build and optimize, faster</h1>
+          <h1>
+            Everything
+            <img id="t1" src={t1} alt="Logo" />
+            digital
+            <img id="t2" src={t2} alt="Logo" />
+            teams need to build and optimize, faster
+          </h1>
         </div>
         <div id="partners">
           <p>
@@ -44,18 +52,18 @@ function LoginPage() {
             <div id="img_cont">
               <img id="google" src={google} alt="Logo" style={{ width: '30px', height: '30px' }} />
             </div>
-            <p>Continue with Google</p>
+            <button type="button">Continue with Google</button>
           </div>
           <div id="github_signup">
             <div id="img_cont">
               <img id="github" src={github} alt="Logo" style={{ width: '30px', height: '30px' }} />
             </div>
-            <p>Continue with Github</p>
+            <button type="button">Continue with Github</button>
           </div>
           <div id="email_option">
-            <div />
-            <p>Or, log in with your email</p>
-            <div />
+            <div className="divider" />
+              <p>Or, log in with your email</p>
+            <div className="divider" />
           </div>
         </div>
         <div id="login_form">

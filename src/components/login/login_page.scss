@@ -6,8 +6,6 @@
   color: white;
   padding-top: 100px;
   justify-content: space-around;
-  //   align-items: center;
-  //   align-self: left;
   padding: 100px 50px 20px 20px;
 
   h1 {
@@ -60,13 +58,10 @@
         width: 30px;
         height: auto;
         margin-bottom: 1rem;
-        // background-color: red;
       }
       & h2 {
         margin-top: 0;
         padding-top: 0;
-        // // background-color: red;
-        // color: red;
         font-size: 2rem;
         font-weight: 700;
         margin-bottom: 1rem;
@@ -160,11 +155,17 @@
         align-items: center;
         justify-content: center;
         margin-top: 30px;
+        width: 100%;
+        & p {
+          margin: auto;
+          padding: 0 10px 0 10px ;
+        }
         .divider {
           flex: 1;
           height: 1px;
-          background-color: black;
+          background-color: rgb(7, 0, 0);
           margin: 0 10px;
+          width: 30%;
         }
       }
     }
@@ -213,5 +214,8 @@
     font-weight: 700;
     text-align: center;
     margin-top: 10px;
+    a {
+      text-decoration: none;
+    }
   }
 }

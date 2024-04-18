@@ -5,6 +5,11 @@ import google from '../images/google.jpeg';
 import github from '../images/github.jpeg';
 import t1 from '../images/t1.png';
 import t2 from '../images/t2.png';
+import everlane from '../images/everlane.png';
+import zapier from '../images/zapier.png';
+import jcrew from '../images/jcrew.jpg';
+import serasa from '../images/serasa.png';
+import afterpay from '../images/afterpay.png';
 
 function LoginPage() {
   return (
@@ -25,18 +30,11 @@ function LoginPage() {
             <span style={{ color: 'gold !important' }}>↘️</span>
           </p>
           <div>
-            <img
-              src="https://www.datocms-assets.com/20955/1606829820-partner.png"
-              alt="partner"
-            />
-            <img
-              src="https://www.datocms-assets.com/20955/1606829820-partner.png"
-              alt="partner"
-            />
-            <img
-              src="https://www.datocms-assets.com/20955/1606829820-partner.png"
-              alt="partner"
-            />
+            <img id="everlane" src={everlane} alt="Logo" style={{ width: '100px', height: '50px' }} />
+            <img id="zapier" src={zapier} alt="Logo" style={{ width: '100px', height: '50px' }} />
+            <img id="jcrew" src={jcrew} alt="Logo" style={{ width: '100px', height: '50px' }} />
+            <img id="serasa" src={serasa} alt="Logo" style={{ width: '100px', height: '50px' }} />
+            <img id="afterpay" src={afterpay} alt="Logo" style={{ width: '100px', height: '50px' }} />
           </div>
         </div>
       </section>
@@ -62,7 +60,7 @@ function LoginPage() {
           </div>
           <div id="email_option">
             <div className="divider" />
-              <p>Or, log in with your email</p>
+            <p>Or, log in with your email</p>
             <div className="divider" />
           </div>
         </div>

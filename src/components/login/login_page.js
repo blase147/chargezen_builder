@@ -27,7 +27,7 @@ function LoginPage() {
         <div id="partners">
           <p>
             YOU&apos; RE IN GOOD COMPANY
-            <span style={{ color: 'gold !important' }}>↘️</span>
+            <span style={{ color: 'gold !important' }}> &#x2198;</span>
           </p>
           <div>
             <img id="everlane" src={everlane} alt="Logo" style={{ width: '100px', height: '50px' }} />
